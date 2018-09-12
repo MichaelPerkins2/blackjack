@@ -188,6 +188,8 @@ function showStatus() {
         return;
     }
 
+
+
     let dealerCardString = '';
     for (let i = 0; i < dealerCards.length; i++) {
         dealerCardString += getCardString(dealerCards[i]) + '\n';
@@ -197,6 +199,11 @@ function showStatus() {
     for (let i = 0; i < playerCards.length; i++) {
         playerCardString += getCardString(playerCards[i]) + '\n';
     }
+
+    // if (gameStarted) {                                      // Hiding dealer's second card
+    //     textArea.innerText = 'Dealer has: \n' +
+    //         '(score: )\n\n'
+    // }
 
     updateScores();
 
